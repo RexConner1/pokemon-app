@@ -11,6 +11,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/pokemon', require('./controllers/pokemonController.js'));
 app.use('/players', require('./controllers/playersController.js'));
 
+app.get('/', (req, res) => {
+  res.render('players/index.ejs');
+});
+
 app.listen(process.env.PORT, ()=>{
   console.log("Listening");
 });

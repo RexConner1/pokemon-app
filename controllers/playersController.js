@@ -5,10 +5,6 @@ const Pokemon = require('../models').Pokemon;
 const Team = require('../models').Team;
 
 
-router.get('/', (req, res) => {
-    res.render('players/index.ejs');
-});
-
 router.get('/signup', (req, res) => {
     Pokemon.findAll().then((pokemon) => {
         Team.findAll().then((teams) => {
