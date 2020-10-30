@@ -72,7 +72,7 @@ router.put('/profile/:id', (req, res) => {
 
 router.delete('/profile/:id', (req, res) => {
     Player.destroy({ where: { id: req.params.id } }).then(() => {
-        res.redirect('/players');
+        res.redirect('/');
     });
 });
 
