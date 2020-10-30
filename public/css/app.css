@@ -1,0 +1,36 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    font-family: 'VT323', monospace;
+    font-size: 2vw;
+    display: table-cell;
+    vertical-align: middle;
+
+    background-image: url('/images/border.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+body, form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+
+.input {
+    margin: 10px;
+}
+
+form {
+    margin: 5px;
+}
